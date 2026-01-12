@@ -190,7 +190,7 @@ DELETE /api/analyze/:id
 
 **Your Name**
 GitHub: [https://github.com/Darshan-Ramagade](https://github.com/Darshan-Ramagade)
-LinkedIn: [https://linkedin.com/in/yourprofile](https://shorturl.at/le329)
+LinkedIn: [https://linkedin.com/in/Darshan Ramagade](https://shorturl.at/le329)
 
 ---
 
