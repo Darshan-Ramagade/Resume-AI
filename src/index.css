@@ -1,0 +1,74 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg
+           font-medium transition-colors duration-200 outline-none;
+  }
+
+  /* NO COLORS HERE */
+  .btn-primary {
+    @apply text-white;
+  }
+
+  .btn-secondary {
+    @apply text-gray-800;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg outline-none;
+  }
+
+  .input:focus {
+    @apply ring-2 border-transparent;
+  }
+
+  .card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm p-6;
+  }
+}
